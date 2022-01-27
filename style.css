@@ -1,4 +1,4 @@
- .btn-secondary{ 
+.btn-secondary{ 
  background-color:  black;
  margin-left: 7px;
  }
@@ -61,6 +61,7 @@
 #details{
 	text-align: center;
 	font-family: "Lucida Console", "Courier New", monospace;
+  letter-spacing: 1px;
 }
 #score{ 
    border-style: solid;
@@ -78,11 +79,11 @@
 
  .vl {
   border-left: 1px solid black;
-  height: 285px;
+  height: 260px;
   position: absolute;
   left: 50%;
   margin-left: -3px;
-  top:305px;
+  top:330px;
 }
 
 #skills{ 
@@ -118,4 +119,9 @@
 	text-decoration: underline;
 	text-align: center;
 	font-size: 13px;
+}
+
+.toggle{
+  position: absolute;
+  transform: translateX(155px)
 }
