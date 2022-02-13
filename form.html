@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      <link rel="stylesheet" href="navbar.css">
+      <link rel="stylesheet" href="form.css">
+   </head>
+<body>
+  <nav>   
+        <div class="navbar-top">
+            <div class="profile-btn">
+                <a href="#"><i class="fas fa-user fa-2x"></i></a>
+            </div>
+            <div class="nav-logo">
+                <a href="#"><img src="pp-removebg-preview.png"></a>
+            </div>
+            
+        </div>
+
+        <div class="navbar_bottom">
+            <div class="nav-items">
+                <div class ="nav-item" >
+                    <a href="#">Test</a>
+                </div>
+                <div class ="nav-item" >
+                    <a href="#">Newsletter</a>
+                </div>
+                <div class ="nav-item" >
+                    <a href="#">Games</a>
+                </div>
+                <div class ="nav-item" >
+                    <a href="#">Connect</a>
+                </div>
+                <div class ="nav-item" >
+                    <a href="#">Events</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+<div id="main">
+<div class="profile-pic-div">
+  <img src="profile_image.jfif" id="photo">
+  <input type="file" id="file">
+  <label for="file" id="uploadBtn">Choose Photo</label>
+</div>
+
+<script src="forms.js"></script>
+  <div class="container">
+    <div class="title">Set up your Profile</div>
+    <div class="content">
+      <form>
+        <div class="user-details">
+          <div class="input-box">
+            <span class="details">Full Name</span>
+            <input type="text" placeholder="Enter your name" required>
+          </div>
+          <div class="input-box">
+            <span class="details">Username</span>
+            <input type="text" placeholder="Create a username" required>
+          </div>
+           <div class="input-box">
+            <span class="details">Age</span>
+            <input type="text" placeholder="Enter your age" required>
+          </div>
+        </div>
+        <div class="gender-details">
+          <input type="radio" name="gender" id="dot-1">
+          <input type="radio" name="gender" id="dot-2">
+          <input type="radio" name="gender" id="dot-3">
+          <span class="gender-title">Gender</span>
+          <div class="category">
+            <label for="dot-1">
+            <span class="dot one"></span>
+            <span class="gender">Male</span>
+          </label>
+          <label for="dot-2">
+            <span class="dot two"></span>
+            <span class="gender">Female</span>
+          </label>
+          <label for="dot-3">
+            <span class="dot three"></span>
+            <span class="gender">Prefer not to say</span>
+            </label>
+          </div>
+        <div class="user-details">
+          <div class="input-box">
+            <span class="details">Currently persuing degree</span>
+            <input type="text" placeholder="Degree" required></div>
+            <div>
+            <span class="details" style="font-weight: 500;">Year of graduation</span>
+            <div class="custom-select" style="width:200px;"></div>
+  <select>
+    <option value="0">2022</option>
+    <option value="1">2023</option>
+    <option value="2">2024</option>
+    <option value="3">2025</option>
+    <option value="4">2026</option>
+  </select>
+</div>
+<br>
+<div class="input-box">
+            <span class="details">College</span>
+            <input type="text" placeholder="Enter college name" required></div>
+          </div>
+
+           <div class="resume">Upload your resume</div>
+          <div class="resume-upload">
+            <input type="file" id="myFile" name="filename">
+        </div>
+         <br>
+        <button type='submit' name='btn_login' id="submit" style="margin-left: 300px;padding:6px;"><span><b><a href="main.html">Submit</a></b></span></button></a>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+
+   <footer>
+        <div class="footer_logo">
+            <a href="#"><img src="pp-removebg-preview.png"></a>
+            <hr>
+        </div>
+        <div class="footer_text">
+            <p>Follow us</p>
+        </div>
+
+        <div class="follow_links">
+            <a href="#"><img src="instagram.png"></a>
+            <a href="#"><img src="facebook.png"></i></a>
+            <a href="#"><img src="twitter.png"></i></a>
+            <a href="#"><img src="whatsapp.png"></i></a>
+            <a href="#"><img src="youtube.png"></i></a>
+        </div>
+
+    </footer>
+     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.1/jquery.min.js"></script>
+
+  <script type="module" src="auth.js"></script>
+  <script src="index.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+</body>
+</html>
