@@ -133,8 +133,8 @@ body {
 }
 
 #details{
-	text-align: center;
-	font-family: "Lucida Console", "Courier New", monospace;
+  text-align: center;
+  font-family: "Lucida Console", "Courier New", monospace;
   letter-spacing: 1px;
 }
 #score{ 
@@ -183,16 +183,16 @@ body {
 } 
 
 #other{
-	text-align: center;
-	font-size: 10px;
-	color: grey;
+  text-align: center;
+  font-size: 10px;
+  color: grey;
 }
 
 #cv{
-	color: blue;
-	text-decoration: underline;
-	text-align: center;
-	font-size: 13px;
+  color: blue;
+  text-decoration: underline;
+  text-align: center;
+  font-size: 13px;
 }
 
 .toggle{

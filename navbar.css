@@ -1,0 +1,95 @@
+ :root {
+            font-size: 16px;
+            font-family: 'Open Sans';
+            --textcolor1: #000000;
+            --bgcolor1: #d8d8d8;
+            --bgcolor2: #858585;
+        }
+        *{
+            box-sizing: border-box;
+        }
+        body {
+            margin: 0;
+            padding: 0;
+        }
+        
+        .navbar-top{
+            
+            justify-content: left;
+            display: flex; 
+            align-items: center;
+            padding: 3px 10% ;
+            box-shadow: 5px 0px 8px black;
+
+        }
+        .profile-btn{
+            float:left;
+            padding-right: 50px;
+        }
+        .profile-btn a{
+            text-decoration: none;
+            color: var(--textcolor1);
+        }
+        .nav-logo{
+            float:left;
+        }
+        .nav-logo img{
+            height: 75px;
+            cursor: pointer;
+        }
+        
+
+        .navbar-bottom{
+            display:flex;
+        }
+        .nav-items{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .nav-item{
+            font-size: larger;
+            font-weight: bolder;
+            padding: 0.9% 2%;
+            margin :3px;
+            border-radius: 5px;
+        }
+        .nav-item a{
+            padding: 10px;
+            border-radius: 5px;
+            text-decoration: none;
+            color: var(--textcolor1);
+        }
+        .nav-item :hover{
+            background-color: #c4bfbf;
+        }
+        
+        
+        .footer_logo{
+            justify-content: center;
+            text-align: center;
+        }
+        .footer_logo img{
+            
+            height: 140px;
+            padding-top: 10px;
+        }
+        .footer_logo hr{
+            width: 50%;
+        }
+        .footer_text p{
+            text-align: center;
+        }
+
+        .follow_links{
+            display: flex;
+            justify-content: center;
+        }
+        .follow_links a{
+            margin: 10px;
+            text-decoration: none;
+    
+        }
+        .follow_links a img{
+            height: 30px;
+        }
