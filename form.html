@@ -6,8 +6,19 @@
       <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
       <link rel="stylesheet" href="navbar.css">
       <link rel="stylesheet" href="form.css">
-   </head>
+         </head> 
 <body>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script type="module">
+import { getDatabase, ref, set } from "/node_module/@firebase/database";
+import { collection, addDoc } from "/node_module/@firebase/firestore"; 
+import { getFirestore } from "/node_module/@firebase/firestore";
+import firebase from "/node_module/@firebase/app";
+import "/node_module/@firebase/auth";
+import "/node_module/@firebase/firestore";
+import { initializeApp } from '/node_module/@firebase/app';
+</script>
+ <script type="module" src="forms.js"></script>
   <nav>   
         <div class="navbar-top">
             <div class="profile-btn">
@@ -45,72 +56,56 @@
   <input type="file" id="file">
   <label for="file" id="uploadBtn">Choose Photo</label>
 </div>
-
-<script src="forms.js"></script>
   <div class="container">
     <div class="title">Set up your Profile</div>
     <div class="content">
-      <form>
+      <form id="profile_form">
         <div class="user-details">
           <div class="input-box">
             <span class="details">Full Name</span>
-            <input type="text" placeholder="Enter your name" required>
+            <input type="text" id="name" placeholder="Enter your name" required>
           </div>
           <div class="input-box">
             <span class="details">Username</span>
-            <input type="text" placeholder="Create a username" required>
+            <input type="text" id="username" placeholder="Create a username" required>
           </div>
            <div class="input-box">
             <span class="details">Age</span>
-            <input type="text" placeholder="Enter your age" required>
+            <input type="text" id="age" placeholder="Enter your age" required>
           </div>
         </div>
-        <div class="gender-details">
-          <input type="radio" name="gender" id="dot-1">
-          <input type="radio" name="gender" id="dot-2">
-          <input type="radio" name="gender" id="dot-3">
-          <span class="gender-title">Gender</span>
-          <div class="category">
-            <label for="dot-1">
-            <span class="dot one"></span>
-            <span class="gender">Male</span>
-          </label>
-          <label for="dot-2">
-            <span class="dot two"></span>
-            <span class="gender">Female</span>
-          </label>
-          <label for="dot-3">
-            <span class="dot three"></span>
-            <span class="gender">Prefer not to say</span>
-            </label>
-          </div>
+       
         <div class="user-details">
           <div class="input-box">
             <span class="details">Currently persuing degree</span>
-            <input type="text" placeholder="Degree" required></div>
+            <input type="text" id="degree" placeholder="Degree" required></div>
             <div>
             <span class="details" style="font-weight: 500;">Year of graduation</span>
-            <div class="custom-select" style="width:200px;"></div>
-  <select>
-    <option value="0">2022</option>
-    <option value="1">2023</option>
-    <option value="2">2024</option>
-    <option value="3">2025</option>
-    <option value="4">2026</option>
+  <select id="year" class="col-details">
+    <option value="2022">2022</option>
+    <option value="2023">2023</option>
+    <option value="2024">2024</option>
+    <option value="2025">2025</option>
+    <option value="2026">2026</option>
   </select>
 </div>
 <br>
-<div class="input-box">
-            <span class="details">College</span>
-            <input type="text" placeholder="Enter college name" required></div>
-          </div>
+<!-- College name -->
+  <div>
+  <span class="details" style="font-weight: 500;">College currently studying in</span>
+<!--   <div id="college" class="custom-select" style="width:200px;"></div> -->
+  <select id="sel" class="col-details" style="width: 500px;">
+  <option>Select option</option>
+  </select>
+<div class="box" id="sol"></div>
+</div>
 
            <div class="resume">Upload your resume</div>
           <div class="resume-upload">
             <input type="file" id="myFile" name="filename">
         </div>
          <br>
-        <button type='submit' name='btn_login' id="submit" style="margin-left: 300px;padding:6px;"><span><b><a href="main.html">Submit</a></b></span></button></a>
+        <button type='submit' name='btn_login' id="submit" style="margin-left: 300px;padding:6px;"><span><b>Submit</b></span></button>
         </div>
       </form>
     </div>
@@ -136,10 +131,8 @@
 
     </footer>
      <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.1/jquery.min.js"></script>
-
-  <script type="module" src="auth.js"></script>
-  <script src="index.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-firestore.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-
 </body>
 </html>
